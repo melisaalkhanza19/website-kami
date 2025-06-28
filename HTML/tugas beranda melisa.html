@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+     *{
+            margin: 0;
+            padding: 0;
+        }
+        
+     .top-bar {
+        background-color: #6fbf73;
+        color: #fdd835;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 2px solid white;
+        opacity: 0.7;
+       
+    }
+
+    .social-icons a {
+        color: #fdd835;
+        text-decoration: underline;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .social-icons a:hover{
+        color: #ffffff;
+    }
+
+
+    .container {
+        display: flex;
+        background-color: #6fbf73;
+        opacity: 0.7;
+        justify-content: space-between;
+    }
+
+    .container img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        padding: 2px;
+        object-fit: cover;
+    }
+
+    .container nav{
+        align-self: center;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .nav-links a{
+        text-decoration:none;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 10px;
+        display: block;
+
+    }
+
+    .nav-links a:hover{
+        opacity: 0.5;
+    }
+    .utama > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.gabung{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+ .line-project {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+      }
+
+      .line{
+        border: 2px solid black;
+        height: 0px;
+        width: 55px;
+        align-self: center;
+        margin: 7px;
+      }
+      .line-project h2{
+        margin: 5px;
+      }
+
+      .info p{
+        color: black;
+        padding: 10px;
+      }
+
+    .image-kolase{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 350px);
+    grid-gap:3px ;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.image-kolase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(89, 45, 45);
+   
+}
+.gambar1{
+    grid-column: 1;
+    grid-row: 1/span 3;
+}
+.gambar2{
+    grid-column: 2/span 2;
+    grid-row: 1;
+}
+.gambar3{
+    grid-column: 4;
+    grid-row: 1;
+}
+.gambar4{
+    grid-column: 2;
+    grid-row: 2;
+}
+.gambar5{
+    grid-column: 3;
+    grid-row: 2;
+}
+.gambar6{
+    grid-column: 4;
+    grid-row: 2/span 2;
+}
+.gambar7{
+    grid-column: 2;
+    grid-row: 3;
+}
+.gambar8{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.Testimoni{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 40px;
+}
+.testimonial-box {
+  position: relative;
+  width: 500px;
+  background-color: #dedede;
+  border: 2px solid #5e3c35;
+  border-radius: 10px;
+  padding: 30px 20px 20px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.profile-img {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #5e3c35;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial-content .position {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-content .quote {
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+  line-height: 1.5;
+}
+.maps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-gap:3px ;
+    margin-top: 20px;
+
+}
+
+.maps img{
+  height: 150px;
+  width: 150px;
+  padding: 70px;
+}
+.maps h3{
+  color: #fdd835;
+}
+.maps p {
+  color: #dedede;
+}
+
+.maps{
+  background-color: #4aad4f;
+  opacity: 0.7;
+  
+}
+
+
+
+
+
+      
+
+    
+
+
+
+</style>
+<body>
+    <div class="utama">
+    <img src="../img/pexels-cottonbro-4918158.jpg" alt="bedus">
+    <div class="gabung">
+        <div class="top-bar">
+            <strong>Kontak Person: 0853-3020-7559</strong> 
+            <div class="social-icons">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="../img/ChatGPT_Image_Jun_2__2025__04_49_25_AM-removebg-preview.png" alt="kambing">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang kami</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="line-project">
+    <div class="line"></div>
+    <h2>Barokah Jaya Farm</h2>
+    <div class="line"></div>
+</div>
+
+<div class="info">
+     <p> Barokah Jaya Farm berdiri pada tanggal 9 Mei 2025, lahir dari semangat kemandirian ekonomi, keinginan 
+untuk memperoleh passive income, serta cita-cita besar untuk memberikan manfaat bagi masyarakat sekitar. 
+Dengan tekad yang kuat, saya memberanikan diri keluar dari zona nyaman, menantang ketidakpastian, dan 
+memulai usaha ini dari modal pinjaman bank. Meskipun awalnya terasa berat, saya yakin setiap langkah yang 
+diambil dengan niat baik akan mendatangkan keberkahan dan kebermanfaatan yang luas, terutama bagi 
+masyarakat sekitar Dusun Pesisir, Desa Sumberanyar, RT 31 RW 09, Kecamatan Paiton, Kabupaten Probolinggo.</p>
+<p>Berawal dari 7 ekor domba—6 betina dan 1 pejantan—saya menanamkan harapan besar agar peternakan ini 
+bisa berkembang hingga memiliki setidaknya 200 indukan. Tidak hanya asal memelihara, saya 
+memperhatikan betul kualitas indukan yang dipilih. Saya sengaja memilih indukan yang memiliki ras 
+keturunan impor agar bobot domba tidak kecil, sehingga kualitas produksi ternak pun lebih terjamin. Dengan 
+begitu, Barokah Jaya Farm tidak hanya sekadar tempat beternak, tetapi juga menjadi pusat pengembangan 
+domba berkualitas unggul.</p>
+<p> Manajemen pakan menjadi salah satu fokus utama di Barokah Jaya Farm. Saya percaya bahwa kualitas 
+pakan dan pengelolaannya sangat menentukan pertumbuhan bobot domba. Oleh karena itu, saya 
+merancang sistem manajemen pakan yang cermat agar setiap domba dapat tumbuh optimal. Mulai dari 
+pemilihan jenis pakan, pemberian suplemen alami, hingga jadwal pemberian yang konsisten, semuanya 
+dilakukan demi menjaga kualitas domba agar selalu prima.</p>
+<p>Baca Selengkapnya...!</p>
+</div>
+<div class="image-kolase">
+      <div class="gambar1">
+        <img src="../IMG/galery 1.jpg" alt="" />
+      </div>
+      <div class="gambar2">
+        <img src="../img/galery 2.jpg" alt="" />
+      </div>
+      <div class="gambar3">
+        <img src="../img/kambing 3.jpg" alt="" />
+      </div>
+       <div class="gambar4">
+        <img src="../img/kambing 4.jpg" alt="" />
+      </div>
+      <div class="gambar5">
+        <img src="../img/kambing 5.jpg" alt="" />
+      </div>
+      <div class="gambar6">
+        <img src="../img/kambing  6.jpg" alt="" />
+      </div>
+      <div class="gambar7">
+        <img src="../img/kambing 7.jpg" alt="" />
+      </div>
+      <div class="gambar8">
+        <img src="../img/kambing 8.jpg" alt="" />
+      </div>
+</div>
+
+
+<div class="line-project">
+    <div class="line"></div>
+    <h2>Testimoni Customer</h2>
+    <div class="line"></div>
+</div>
+
+ 
+  <div class="Testimoni">
+    <div class="testimonial-box">
+      <div class="profile-img">
+        <img src="../IMG/komisaris-independen-lucy-wulan-guritno-13_169.jpeg" alt="">
+      </div>
+      <div class="testimonial-content">
+        <h3>Wulan Gurinto</h3>
+        <div class="position">
+          <p>Raja Sate</p>
+        <div class="quote">
+          <p>“ Kambing yang dijual sangat bagus, sehingga kualitas dagingnya mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-box">
+      <div class="profile-img">
+        <img src="../IMG/komisaris-independen-lucy-wulan-guritno-13_169.jpeg" alt="">
+      </div>
+      <div class="testimonial-content">
+        <h3>Wulan Gurinto</h3>
+        <div class="position">
+          <p>Raja Sate</p>
+        <div class="quote">
+          <p>“ Kambing yang dijual sangat bagus, sehingga kualitas dagingnya mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-box">
+      <div class="profile-img">
+        <img src="../IMG/komisaris-independen-lucy-wulan-guritno-13_169.jpeg" alt="">
+      </div>
+      <div class="testimonial-content">
+        <h3>Wulan Gurinto</h3>
+        <div class="position">
+          <p>Raja Sate</p>
+        <div class="quote">
+          <p>“ Kambing yang dijual sangat bagus, sehingga kualitas dagingnya mantap, segar dan tidak keras. jika anda ingin berbisnis dikuliner sate kambing maka saya sarankan ke peternakan Barokah Jaya Farm</p>
+        </div>
+        </div>
+      </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="maps">
+      <img src="../img/17097148565671.jpg" alt="">
+      <div class="teks-alamat">
+        <h3>Jam Operasional Berkunjung</h3>
+        <p>Senin - Sabtu dari jam</p>
+        <p>08:00 - 16:00 WIB</p>
+        <h3>Informasi Kontak</h3>
+        <p>Alamat Lengkap :</p>
+        <p>Dusun Pesisir,Desa Sumberanyar,Rt 31 Rw 09,Kecamatan Paiton,Kabupaten Probolinggo</p>
+        <p>Nomor telepon/WhathsApp</p>
+        <p>0853-3020-7559</p>
+        <p>Email</p>
+        <p>Info@Barokah jaya farm.com</p>
+      </div>
+      <div>
+        <h3>Akses Menu</h3>
+        <nav>
+          <a href="">Beranda</a>
+          <a href="">Tentang Kami</a>
+          <a href="">Produk</a>
+          <a href="">Galery</a>
+          <a href="">Artikel</a>
+          <a href="">Testimoni</a>
+        </nav>
+        <h3>Pemesanan Online</h3>
+      </div>
+    </div>
+
+  
+  
+</body>
+</html>
